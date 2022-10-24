@@ -1,125 +1,112 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@300&display=swap");
 * {
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
+  text-decoration: none !important;
 }
-body {
-  display: flex;
-}
+
 aside {
   background-color: #ed5828;
-  min-height: 100vh;
-  min-width: 315px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
 }
+
 .foto-perfil {
-  width: 200px;
-  border-radius: 50%;
-  border: 11px solid #ff926e;
+  border-color: #ff926e !important;
+  width: 180px;
 }
-.menu {
-  margin-top: 20px;
-}
+
 .menu-option {
-  padding: 12px;
   font-size: 20px;
-  text-align: center;
   list-style-type: none;
-  text-transform: uppercase;
   font-family: "Montserrat";
-  font-weight: 800;
 }
 .menu-option:hover {
   text-shadow: 1px 1px #ccc;
-  /* font-size: 22px; */
+  font-size: 21px;
 }
+
 .menu-option a:active {
-  color: #ffc5b1;
+  color: #ffc5b1 !important;
 }
-.menu-option a {
-  color: white;
-}
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 65px;
-}
+
 .name {
-  margin: 0;
   font-size: 90px;
   font-family: Oswald;
   color: #363636;
 }
+
 .sobrenome {
   color: #ed5828;
 }
-address {
-  font-style: normal;
-  font-family: Oswald;
-  font-weight: 500;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #363636;
-}
+
 address a {
   color: #ed5828;
 }
-#descricao {
-  font-family: Montserrat;
-  font-weight: 700;
-  font-size: 20px;
-  margin: 60px 40px 40px 0px;
-  line-height: 1.5em;
+
+address {
+  font-style: normal;
+  font-family: Oswald;
   color: #363636;
 }
 
+#descricao {
+  font-family: Montserrat;
+  color: #363636;
+  font-size: 16px;
+}
+
 .fa-brands {
-  font-size: 50px;
-  margin: 20px 30px 20px 0;
   color: #444444;
   text-shadow: 2px 2px #cccccc;
 }
 .fa-brands:hover {
   color: #000b6e;
 }
-.links {
-  min-width: 400px;
-}
+
 .conhecimentos {
-  margin-left: 30px;
   font-family: Montserrat;
-  line-height: 2em;
-  font-size: 24px;
-  font-weight: 600;
   color: #363636;
 }
-#ferramentas {
-  margin-left: 30px;
-  list-style-type: disc;
-  font-style: oblique;
+
+.titulo {
+  font-family: Oswald;
+  font-size: 60px;
+  color: #363636;
 }
+
 .objetivos {
   font-family: Montserrat;
-  line-height: 1.5em;
-  font-size: 20px;
-  font-weight: 600;
   color: #363636;
   list-style-position: inside;
-  margin-right: 65px;
-  color: #363636;
 }
+
 .objetivos li {
   padding: 8px;
 }
-.titulo {
-  font-family: Oswald;
-  text-transform: uppercase;
-  font-size: 80px;
-  color: #363636;
+
+@media screen and (max-width: 768px) {
+  .aside {
+    height: 40vh;
+  }
+  .main {
+    height: 60vh;
+    text-align: center;
+  }
+  .menu-option {
+    font-size: 15px;
+  }
+  .name {
+    font-size: 40px;
+  }
+  .address {
+    font-size: 15px !important;
+  }
+  .article {
+    font-size: 14px !important;
+  }
+  .titulo {
+    font-size: 40px;
+  }
+  .objetivos {
+    font-size: 17px !important;
+  }
 }
